@@ -37,6 +37,8 @@ The solver operates in two stages:
    - Accept worse placements with a probability decreasing over time to escape local minima.  
    - Objective: minimize bounding box size and center-of-mass deviation.
 
+---
+
 Initial Random Placement
 ┌──────────────────────┐
 │ USB MCU Crystal │
@@ -51,8 +53,7 @@ Optimized Placement
 │ ... │
 └──────────────────────┘
 
-yaml
-Copy code
+
 
 ---
 
@@ -87,6 +88,8 @@ Options
 
 --show → display plot interactively
 
+---
+
 🧮 Scoring
 The solver maximizes a score based on:
 
@@ -96,15 +99,20 @@ Center-of-mass closeness to the board center
 
 Simulated annealing gradually refines placements to improve the score.
 
+---
+
 ⚙️ Requirements
 Python 3.7+
 
 matplotlib
 
 Install requirements:
-
+---
 bash
 Copy code
 pip install matplotlib
+
+---
+
 📜 License
 This project is for academic/educational purposes as part of the PCB placement assignment.
